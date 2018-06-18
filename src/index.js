@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import User from "./SOLUTION/User";
+import User from "./User";
 import Users from "./Users";
 import Loading from "./Loading";
 
@@ -26,7 +26,7 @@ const styles = {
 const App = () => (
   <div style={styles}>
     <Users />
-    <User id="123">
+    <User id="7">
       {user => (!user ? <Loading /> : <p>{user.firstName}</p>)}
     </User>
   </div>
