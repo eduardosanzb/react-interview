@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { user as fetchUser } from "./user.api.js";
+import { user as fetchUser } from "../user.api.js";
 
 class User extends React.Component {
   state = {

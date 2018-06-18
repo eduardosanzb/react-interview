@@ -1,3 +1,6 @@
+/**
+ * We need to avoid id collisions.
+ */
 const id = () => Math.random().toFixed(1) * 10;
 
 export const data = [

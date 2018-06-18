@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import User from "./User";
+import User from "./SOLUTION/User";
 import Users from "./Users";
 import Loading from "./Loading";
 
@@ -19,14 +19,14 @@ const styles = {
  * 3. Improve the id() generator.
  * 4. How would you improve this app architecture.
  * 5. Improve the file directory/structure.
- * 6. If enough time, implement redux/mobx.
+ * 6. If enough time, implement redux/mobx/React.Context.
  * 7. How else would you improve this app.
  */
 
 const App = () => (
   <div style={styles}>
     <Users />
-    <User id="3">
+    <User id="123">
       {user => (!user ? <Loading /> : <p>{user.firstName}</p>)}
     </User>
   </div>
