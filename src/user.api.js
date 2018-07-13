@@ -1,5 +1,5 @@
 import { data } from "./data";
-const TIME = 10000;
+const TIME = 100000;
 const normalize = () => data.reduce((seed, u) => ({ ...seed, [u.id]: u }), {});
 
 /**
@@ -13,18 +13,16 @@ const normalize = () => data.reduce((seed, u) => ({ ...seed, [u.id]: u }), {});
  *   lastName: 'Baker',
  * }
  */
-export const user = id =>
+export const fullDogData = id =>
   new Promise(resolve => setTimeout(resolve(normalize(data)[id]), TIME));
 
 /**
  * @promise {Array}
  * @example
- * [{
- *   id: '2344',
- *   firstName: 'Chet',
- *   lastName: 'Baker',
- *   }, ...]
+ * [{ id: '2344' }, ...]
  *
  */
-export const users = () =>
-  new Promise(resolve => setTimeout(resolve(data), TIME));
+export const doggiesAPI = () =>
+  new Promise(resolve =>
+    setTimeout(resolve(data.map(({ id }) => ({ id }))), TIME)
+  );

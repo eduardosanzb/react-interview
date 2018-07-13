@@ -17,7 +17,7 @@ const styles = {
  *
  * Points to consider:
  * 1. Implement the <Dog /> without modifying the index.js.
- * 2. Implement the selection of the user via the <Users />.
+ * 2. Implement the selection of the dog via the <Doggies />.
  * 3. Improve the id() generator.
  * 4. How would you improve this app architecture.
  * 5. Improve the file directory/structure.
