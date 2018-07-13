@@ -18,11 +18,8 @@ const styles = {
  * Points to consider:
  * 1. Implement the <Dog /> without modifying the index.js.
  * 2. Implement the selection of the dog via the <Doggies />.
- * 3. Improve the id() generator.
+ * 3. Improve the id() generator inside data.js
  * 4. How would you improve this app architecture.
- * 5. Improve the file directory/structure.
- * 6. If enough time, implement redux/mobx/React.Context.
- * 7. How else would you improve this app.
  */
 
 const App = () => (
